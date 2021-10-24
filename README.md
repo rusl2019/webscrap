@@ -9,7 +9,7 @@ Simple script for scraping website content using python3
 python3 -m pip install --upgrade requests
 ```
 
-* [https://www.crummy.com/software/BeautifulSoup](BeautifulSoup)
+* [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup)
 ```bash
 python3 -m pip install --upgrade beautifulsoup4 
 ```
