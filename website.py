@@ -6,19 +6,18 @@ def scrap(url):
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
 
+    title = soup.find('title')
+    print(f"# {title.get_text()}\n")
+
     for data in soup.find_all("p"):
         data = data.get_text()
-        print(data)
+        print(f"{data}\n")
 
 
 if __name__ == "__main__":
-    url = [
-        'https://news.detik.com/berita/d-5779394/eks-kapolsek-parigi-terduga-perkosa-anak-tersangka-akan-ajukan-banding',
-        'https://news.detik.com/berita/d-5779394/eks-kapolsek-parigi-terduga-perkosa-anak-tersangka-akan-ajukan-banding/2'
-    ]
 
-    # url = 'https://sport.detik.com/raket/d-5779421/anthony-ginting-dan-jonatan-christie-mundur-dari-french-open-2021'
-    # scrap(url)
+    file = open('input.in', 'r')
+    lines = file.readlines()
 
-    for i in url:
-        scrap(i)
+    for url in lines:
+        scrap(url.strip())
