@@ -13,7 +13,7 @@ python3 -m pip install --upgrade requests beautifulsoup4
 
 ## Usage
 
-change variable `url` in input file with link or url website to be scrap
+Change variable `url` in input file with `url` website to be scrapped
 
 ```text
 https://example.com/page/title
