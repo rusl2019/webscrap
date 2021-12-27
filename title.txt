@@ -1,0 +1,8 @@
+---
+title:
+- type: main
+  text: "News from detik.com"
+creator:
+- type: author
+  text: rusl2019
+---
