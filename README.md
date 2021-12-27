@@ -15,5 +15,5 @@ python3 -m pip install --upgrade requests beautifulsoup4
 simply running with normal command line:
 
 ```bash
-python3 website.py > news.md
+python3 main.py
 ```
